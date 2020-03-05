@@ -12,9 +12,9 @@ public class Selenium_Intro {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.coolinarika.com");
-		//driver.navigate().to("https://www.coolinarika.com");
-		//driver.navigate().back();
-		//driver.navigate().forward();
+		driver.navigate().to("https://www.google.com");
+		driver.navigate().back();
+		driver.navigate().forward();
 		driver.findElement(By.id("fm_text_search")).sendKeys("torta");
 		driver.findElement(By.id("fm_text_search")).sendKeys(Keys.ENTER);
 		
