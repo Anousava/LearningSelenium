@@ -11,8 +11,8 @@ public class Selenium_Intro {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ana\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.coolinarika.com");
-		driver.navigate().to("https://www.google.com");
+		driver.get("https://www.google.com");
+		driver.navigate().to("https://www.coolinarika.com");
 		driver.navigate().back();
 		driver.navigate().forward();
 		driver.findElement(By.id("fm_text_search")).sendKeys("torta");
